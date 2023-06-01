@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts, Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="" />
+
+    <title>Odin | Signup Form</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="card__container">
+        <div class="card__img">
+          <div class="card__img-content">
+            <img src="images/coffee-icon.png" alt="" width="120rem" />
+            <a href="#">The Busy Bean</a>
+          </div>
+        </div>
+
+        <section>
+          <div class="card__contents">
+            <p>
+              Become a Busy Bean Member of The Busy Bean and unlock a world of
+              exclusive benefits. Enjoy personalized recommendations, discounts
+              on your favorite beverages, and early access to limited-edition
+              blends. Join us today for a delightful coffee experience like no
+              other!
+            </p>
+
+            <div class="card__form">
+              <p>Let's get brewing!</p>
+
+              <form action="#">
+                <div class="form__input">
+                  <label for="first_name">* First name</label>
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    required
+                  />
+                </div>
+
+                <div class="form__input">
+                  <label for="last_name">Last name</label>
+                  <input type="text" name="last-name" id="last-name" />
+                </div>
+
+                <div class="form__input">
+                  <label for="email">* Email</label>
+                  <input type="email" name="email" id="email" required />
+                </div>
+
+                <div class="form__input">
+                  <label for="phone-number">Phone number</label>
+                  <input type="text" minlength="9" maxlength="9" />
+                </div>
+
+                <div class="form__input">
+                  <label for="pasword">* Password</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    required
+                    minlength="8"
+                  />
+                </div>
+              </form>
+            </div>
+            <button class="card__button">Create Account</button>
+            <p class="card__login">
+              Already have an account? <span><a href="#">Log in</a></span>
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

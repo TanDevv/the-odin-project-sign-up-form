@@ -9,9 +9,9 @@
     <a href=https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form><strong>Sign-Up Form </strong></a>
     <br />
     <br />
-    <a href="live website here">View Demo</a>
+    <a href="https://lambent-dieffenbachia-28abbc.netlify.app/">View Demo</a>
     ·
-    <a href="my solution link here" target="_blank">Github Page</a>
+    <a href="https://github.com/YorkieLT/the-odin-project-sign-up-form" target="_blank">Github Page</a>
   </p>
 </div>
 
@@ -37,8 +37,8 @@ This is a solution to the [The Odin Project | Sign-Up Form](https://www.theodinp
 
 <h2 align="center">Links</h2>
 
-- Solution URL: [https://github.com/YorkieLT/sign-up-form](https://github.com/YorkieLT/sign-up-form)
-- Live Site URL: [live site url](url here too)
+- Solution URL: [https://github.com/YorkieLT/the-odin-project-sign-up-form](https://github.com/YorkieLT/the-odin-project-sign-up-form)
+- Live Site URL: [https://lambent-dieffenbachia-28abbc.netlify.app/](https://lambent-dieffenbachia-28abbc.netlify.app/)
 
 <br>
 
@@ -67,7 +67,7 @@ While developing this website, I have come to realise that I feel ready to delve
 <!-- Badges -->
 
 ![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![](https://img.shields.io/badge/SASS_|_SCSS-blue?logo=sass)
+![](https://img.shields.io/badge/SASS_|_SCSS-blue?style=for-the-badge&logo=sass)
 ![](https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=Prettier&logoColor=white)
 ![](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code)
 

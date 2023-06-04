@@ -4,7 +4,7 @@
   --clr-black-solid: hsl(0,0%,0%);
   --clr-black-transparent: 0, 0, 0;
   --clr-grey-border: hsl(220,13%,91%);
-  --clr-green-btn: hsl(92.4,20.4%,35.5%);
+  --clr-btn: rgb(232, 172, 171);
   /* Typograhy */
   --ff-Poppins: "Poppins", sans-serif;
   --fw-regular-400: 400;
@@ -103,87 +103,80 @@ select {
 /* General Styling */
 body {
   font-family: var(--ff-Poppins);
-  font-weight: var(--fw-semibold-600);
+  font-weight: var(--fw-regular-400);
   min-height: 100vh;
   background-color: rgba(255, 229, 180, 0.8);
 }
 
-/* Card Container Styling */
 .card__container {
   display: grid;
-  grid-template-columns: 1fr 1.9fr;
+  place-content: center;
 }
 
-/* Card Image Styling */
 .card__img {
   background-image: url(/images/background.jpg);
-  background-position: left;
-  background-size: cover;
+  background-position: right 60%;
   background-repeat: no-repeat;
-  max-width: 35vw;
-  min-height: 100vh;
+  background-size: cover;
 }
 
-/* Card Image Content Styling */
 .card__img-content {
   display: flex;
+  margin: 2rem 0.5rem;
+  gap: 0.5rem;
+  flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  margin-top: 3rem;
-  margin-left: 5rem;
-  /* Card Image Anchor & Hover Styling */
 }
 .card__img-content a {
-  font-size: 2.5rem;
-  text-decoration: none;
   color: hsl(0, 0%, 100%);
+  font-weight: var(--fw-semibold-600);
+  font-size: 1.6rem;
+  text-decoration: none;
   transition: all 250ms ease-in-out;
 }
 .card__img-content a:hover {
   transform: scale(1.1);
 }
+.card__img-content .coffee-icon {
+  width: 4.375rem;
+}
 
-/* Card Contents Styling */
 .card__contents {
-  display: flex;
-  flex-direction: column;
-  margin: 8rem 0;
+  display: grid;
 }
 
 .card__text {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-left: 2rem;
-  max-width: 60rem;
-  margin-bottom: 5rem;
-  font-size: 1.5rem;
+  margin: 1rem 2rem;
+  text-align: center;
   color: rgba(var(--clr-black-transparent), 0.8);
 }
 
 .card__form {
-  background-color: hsl(0, 0%, 100%);
+  background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.5);
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
 }
 
 .list-1,
 .list-2,
 .list-3 {
-  display: flex;
-  flex-direction: row;
-  gap: 4rem;
+  margin: 1rem 0;
   font-weight: 400;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .form {
   display: flex;
   flex-direction: column;
+  gap: 0.2rem;
 }
 .form input:focus {
   border: 2px solid #e5e7eb;
@@ -192,15 +185,19 @@ body {
 .form .error:invalid {
   border-color: red;
 }
+.form .error:valid {
+  border-color: green;
+}
 
 .card__button {
+  align-self: center;
   color: white;
-  background-color: var(--clr-green-btn);
-  padding: 0.9rem;
-  max-width: 15.625rem;
+  background-color: var(--clr-btn);
+  margin: 1rem 5rem;
+  max-width: 23rem;
+  padding: 1rem;
   border: 0;
   border-radius: 10px;
-  margin: 2rem 3rem;
   box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.5);
   transition: all 250ms ease-in-out;
   cursor: pointer;
@@ -211,10 +208,62 @@ body {
 
 .card__login {
   font-weight: var(--fw-regular-400);
-  margin-left: 3rem;
+  margin-top: 1rem;
+  text-align: center;
 }
 .card__login a {
-  color: var(--clr-green-btn);
+  color: var(--clr-btn);
   text-decoration: none;
   font-weight: var(--fw-semibold-600);
+}
+
+@media screen and (min-width: 67.5rem) {
+  /* Card Container Styling */
+  .card__container {
+    grid-template-columns: 1fr 1.9fr;
+  }
+  /* Card Image Styling */
+  .card__img {
+    background-position: left;
+    max-width: 35vw;
+    min-height: 100vh;
+  }
+  /* Card Image Content Styling */
+  .card__img-content {
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    /* Card Image Anchor Styling */
+  }
+  .card__img-content a {
+    font-size: 2.5rem;
+  }
+  /* Card Contents Styling */
+  .card__contents {
+    display: flex;
+    flex-direction: column;
+    margin: 8rem 0;
+  }
+  .card__text {
+    margin-left: 2rem;
+    margin-bottom: 5rem;
+    max-width: 60rem;
+    font-size: 1.5rem;
+  }
+  .card__form {
+    align-items: start;
+  }
+  .list-1,
+  .list-2,
+  .list-3 {
+    flex-direction: row;
+    gap: 4rem;
+    margin-bottom: 1rem;
+  }
+  .card__button {
+    align-self: self-start;
+    padding: 0.9rem;
+    margin: 1rem 3rem;
+  }
 }/*# sourceMappingURL=style.css.map */

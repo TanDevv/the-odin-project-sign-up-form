@@ -1,8 +1,10 @@
+/* Card Container Styling */
 .card__container {
   display: grid;
   place-content: center;
 }
 
+/* Card Image & Content Styling */
 .card__img {
   background-image: url(/images/background.jpg);
   background-position: right 60%;
@@ -17,6 +19,7 @@
   flex-direction: column;
   align-items: center;
 
+  /* Anchor Text Hover & Coffee Icon Styling */
   a {
     color: hsl(0, 0%, 100%);
     font-weight: var(--fw-semibold-600);
@@ -34,6 +37,7 @@
   }
 }
 
+/* Text Contents Styling */
 .card__contents {
   display: grid;
 }
@@ -47,6 +51,7 @@
   color: rgba(var(--clr-black-transparent), 0.8);
 }
 
+/* Form Styling */
 .card__form {
   background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.5);
@@ -71,6 +76,7 @@
   flex-direction: column;
   gap: 0.2rem;
 
+  /* Valid & Invalid Input Styling */
   input:focus {
     border: 2px solid #e5e7eb;
     box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.5);
@@ -85,6 +91,7 @@
   }
 }
 
+/* Sign-up Button & Login Styling */
 .card__button {
   align-self: center;
   color: white;
@@ -98,6 +105,7 @@
   transition: all 250ms ease-in-out;
   cursor: pointer;
 
+  /* Button Hover Styling */
   &:hover {
     transform: scale(1.1);
   }
@@ -115,33 +123,33 @@
   }
 }
 
+/* Desktop Responsivness */
 @media screen and (min-width: 67.5rem) {
   /* Card Container Styling */
   .card__container {
     grid-template-columns: 1fr 1.9fr;
   }
 
-  /* Card Image Styling */
+  /* Card Image & Content Styling */
   .card__img {
     background-position: left;
     max-width: 35vw;
     min-height: 100vh;
   }
 
-  /* Card Image Content Styling */
   .card__img-content {
     flex-direction: row;
     gap: 1rem;
     margin-top: 3rem;
     margin-left: 5rem;
 
-    /* Card Image Anchor Styling */
+    /* Anchor Text Hover Styling */
     a {
       font-size: 2.5rem;
     }
   }
 
-  /* Card Contents Styling */
+ /* Text Contents Styling */
   .card__contents {
     display: flex;
     flex-direction: column;
@@ -155,6 +163,7 @@
     font-size: 1.5rem;
   }
 
+  /* Form Styling */
   .card__form {
     align-items: start;
   }
@@ -167,6 +176,7 @@
     margin-bottom: 1rem;
   }
 
+  /* Sign-up Button & Login Styling */
   .card__button {
     align-self: self-start;
     padding: 0.9rem;
